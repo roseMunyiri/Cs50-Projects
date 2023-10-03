@@ -1,0 +1,111 @@
+/* Import the open sans font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Open+Sans:wght@300;400;500&family=Roboto&family=Roboto+Slab:wght@200&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligns the header elements at the opposite ends */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header img {
+  height: 30px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header #account_circle {
+  font-size: 30px;
+  line-height: 24px;
+}
+.header #sentiment_satisfied {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+/* Main body */
+.title {
+  font-size: 20px;
+  margin: 35px 35px;
+  margin-bottom: 20px;
+  color: rgb(209, 31, 31);
+  font-family: "Open Sans", sans-serif;
+}
+hr {
+  border: 1px solid lightgray;
+  margin-top: 5px;
+}
+.title2 {
+  margin: 35px;
+  margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+form {
+  margin: 0px 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.label label {
+  font-size: 14px;
+  margin: 0;
+}
+
+.input {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .form {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .input {
+    flex: 2;
+  }
+  .search-input {
+    width: 70%;
+  }
+}

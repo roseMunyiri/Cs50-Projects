@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- A link to the css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Import Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Container for all the content starts here-->
+    <div class="container-fluid">
+      <!-- Header starts here -->
+      <div class="header">
+        <div class="left-header">
+          <a class="images-text" href="index.html">Homepage</a>
+          <a class="advanced-search" href="advanced.html">Advanced Search</a>
+          <a href="#">
+            <i class="material-icons" id="sentiment_satisfied"
+              >sentiment_satisfied</i
+            ></a
+          >
+          <a href="#"
+            ><i class="material-icons" id="account_circle">account_circle</i></a
+          >
+        </div>
+      </div>
+      <!-- Header ends here -->
+
+      <!-- Main body starts here -->
+      <div class="mainBody">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt="Google Logo"
+        />
+
+        <!-- Search starts here -->
+        <div class="search">
+          <form class="search-input" action="https://www.google.com/search">
+            <i class="material-icons">search</i>
+            <input type="hidden" name="tbm" value="isch" />
+            <input type="text" name="q" placeholder="Search an image" />
+            <i class="material-icons" id="mic">mic</i>
+          </form>
+        </div>
+        <!-- Search ends here -->
+      </div>
+      <!-- Main body ends here -->
+    </div>
+    <!-- Container for all the content ends here-->
+
+    <script src="script.js"></script>
+  </body>
+</html>

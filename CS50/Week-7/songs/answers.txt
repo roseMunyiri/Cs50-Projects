@@ -1,0 +1,2 @@
+I would start by analyzing the songs characteristics, for instance temp, energy, danceability, and loudness. Songs with a low average onthese attributes would be categorized as either happy beats, soothing, or calm beats.Using this numbers, I would label the user's aura.
+First, some songs's characteristics might not be what they're grouped into. Some upbeat songs might not be cheerful and therefore not accurately represent a user's mood. Natural language processing would be more suitable to anlyze the lyrics and correctly label the song's mood.

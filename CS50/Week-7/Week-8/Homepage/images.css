@@ -1,0 +1,92 @@
+/* Import the open sans font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Open+Sans:wght@300;400;500&family=Roboto&family=Roboto+Slab:wght@200&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligns the header elements at the opposite ends */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-header {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 20px 10px;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header #account_circle {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+/* Main body */
+.mainBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.mainBody img {
+  object-fit: contain;
+  height: 100px;
+}
+
+/* Search */
+
+.search-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  width: 80%;
+  max-width: 560px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  box-shadow: 0 10px 4px rgba(141, 77, 77, 0.1);
+}
+
+.search input {
+  background: #f0f0f0;
+  padding: 1px 20px;
+  border: none;
+  outline: none;
+  width: 100%; /* Set for the input to fill available space */
+}
+
+#mic {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .mainBody {
+    margin-top: 30%;
+  }
+}
